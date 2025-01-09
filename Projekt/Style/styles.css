@@ -11,6 +11,13 @@ body {
     color: #e4e4e4;
 }
 
+.logo {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+
+}
+
 header {
     background: linear-gradient(90deg, #ff4d4d, #ff751a);
     color: white;
@@ -78,6 +85,11 @@ a:hover {
     font-size: 1.5rem;
     font-weight: bold;
     color: #ff4d4d;
+}
+
+#pTopGames {
+    color: #29293d;
+    font-weight: bold;
 }
 
 .navbar-nav .nav-item .nav-link {
