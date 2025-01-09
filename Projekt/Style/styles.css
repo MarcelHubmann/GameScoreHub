@@ -11,20 +11,27 @@ body {
     color: #e4e4e4;
 }
 
-.logo {
+#logo {
     height: 125px;
     width: 125px;
     border-radius: 50%;
-
+    position: absolute;
+    left: 100px;
+}
+.header {
+    border-bottom: 5px solid #ff4d4d;
 }
 
 header {
+    display:flex;
     background: linear-gradient(90deg, #ff4d4d, #ff751a);
     color: white;
     padding: 1.5em 0;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     font-size: 1.5rem;
+    position: relative;
 }
 
 #footerMain {
@@ -85,6 +92,11 @@ a:hover {
     font-size: 1.5rem;
     font-weight: bold;
     color: #ff4d4d;
+}
+
+#pTopGames {
+    color: #29293d;
+    font-weight: bold;
 }
 
 .navbar-nav .nav-item .nav-link {
