@@ -90,6 +90,7 @@ a:hover {
 #pTopGames {
     color: #29293d;
     font-weight: bold;
+    margin-bottom: 1em;
 }
 
 .navbar-nav .nav-item .nav-link {
