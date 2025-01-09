@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    padding: 2em;
+}
+
+h1, h2, h3 {
+    color: #4CAF50;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0.5em 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.Header-all-games-links {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+
+.game-links {
+    display: flex; 
+    justify-content: center; 
+    padding: 0; 
+    margin: 0;
+    list-style: none; 
+}
+
+.game-links li {
+    margin: 0 10px; 
+}
+
+.game-links a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.game-links a:hover {
+    text-decoration: underline; 
+    color: #45a049; 
+}
+
+.top-games {
+    display: flex;
+    justify-content: space-around;
+}
+
+.top-games article {
+    border: 1px solid #ccc;
+    padding: 1em;
+    border-radius: 5px;
+    background-color: #fff;
+    max-width: 30%;
+    text-align: center;
+}
+
+.reviews article {
+    margin-bottom: 1.5em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
