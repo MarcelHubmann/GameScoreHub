@@ -1,0 +1,174 @@
+
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2f;
+    color: #e4e4e4;
+}
+
+#logo {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    position: absolute;
+    left: 100px;
+}
+.header {
+    border-bottom: 5px solid #ff4d4d;
+}
+
+header {
+    display:flex;
+    background: linear-gradient(90deg, #ff4d4d, #ff751a);
+    color: white;
+    padding: 1.5em 0;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+    position: relative;
+}
+
+#footerMain {
+    background-color: #151522;
+    color: #e4e4e4;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#footerSide {
+    background-color: #151522;
+    color: #e4e4e4;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 5em;
+}
+
+/* Typography */
+h1, h2, h3 {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #ff4d4d;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ff751a;
+    text-decoration: underline;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #1e1e2f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 1em;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff4d4d;
+}
+
+#pTopGames {
+    color: #29293d;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #1e1e2f;
+    font-weight: bold;
+    padding: 1em 2em;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    line-height: 1.2;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #29293d;
+    color: #ff4d4d;
+    border-radius: 5px;
+}
+
+/* Cards for Games */
+.top-games {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    justify-content: space-evenly;
+    margin: 2em 0;
+}
+
+.top-games article {
+    border: 2px solid #29293d;
+    padding: 1.5em;
+    border-radius: 12px;
+    background-color: #29293d;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.top-games article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+    border-color: #ff4d4d;
+}
+
+/* Reviews */
+.reviews article {
+    margin-bottom: 2em;
+    padding: 1.5em;
+    border: 2px solid #29293d;
+    border-radius: 12px;
+    background-color: #29293d;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Fix for main page link */
+nav a {
+    display: inline-block;
+    margin-top: 2em; /* Adding space above the link */
+    text-align: center;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .top-games {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
