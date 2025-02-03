@@ -1,5 +1,4 @@
 
-/* General Styles */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
@@ -9,17 +8,6 @@ body {
     padding: 0;
     background-color: #1e1e2f;
     color: #e4e4e4;
-}
-
-#logo {
-    height: 125px;
-    width: 125px;
-    border-radius: 50%;
-    position: absolute;
-    left: 100px;
-}
-.header {
-    border-bottom: 5px solid #ff4d4d;
 }
 
 .homeButton {
@@ -58,18 +46,6 @@ header {
     position: relative;
 }
 
-#footerMain {
-    background-color: #151522;
-    color: #e4e4e4;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 0.9rem;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
-}
-
 #footerSide {
     background-color: #151522;
     color: #e4e4e4;
@@ -89,7 +65,6 @@ main {
     margin-bottom: 5em;
 }
 
-/* Typography */
 h1, h2, h3 {
     color: white;
 }
@@ -105,7 +80,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Navigation */
 .navbar {
     background-color: #1e1e2f;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -116,11 +90,6 @@ a:hover {
     font-size: 1.5rem;
     font-weight: bold;
     color: #ff4d4d;
-}
-
-#pTopGames {
-    color: #29293d;
-    font-weight: bold;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -135,15 +104,6 @@ a:hover {
     background-color: #29293d;
     color: #ff4d4d;
     border-radius: 5px;
-}
-
-/* Cards for Games */
-.top-games {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5em;
-    justify-content: space-evenly;
-    margin: 2em 0;
 }
 
 .top-games article {
@@ -164,7 +124,6 @@ a:hover {
     border-color: #ff4d4d;
 }
 
-/* Reviews */
 .reviews article {
     margin-bottom: 2em;
     padding: 1.5em;
@@ -174,7 +133,6 @@ a:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
-/* Fix for main page link */
 nav a {
     display: inline-block;
     margin-top: 2em; /* Adding space above the link */
@@ -184,13 +142,7 @@ nav a {
     font-weight: bold;
 }
 
-/* Responsiveness */
 @media (max-width: 768px) {
-    .top-games {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .navbar-nav {
         flex-direction: column;
         align-items: center;
