@@ -52,7 +52,7 @@ header {
     text-align: center;
     padding: 1em 0;
     position: absolute;
-    bottom: 0;
+    bottom: -13px;
     width: 100%;
     font-size: 0.9rem;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
@@ -64,7 +64,7 @@ header {
     text-align: center;
     padding: 1em 0;
     position: fixed;
-    bottom: 0;
+    bottom: -13px;
     width: 100%;
     font-size: 0.9rem;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
