@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2f;
+    color: #e4e4e4;
+}
+
+header {
+    display:flex;
+    background: linear-gradient(90deg, #ff4d4d, #ff751a);
+    color: white;
+    padding: 1.5em 0;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+    position: relative;
+}
+
+h1, h2, h3 {
+    color: white;
+}
+
+.navbar {
+    background-color: #1e1e2f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 1em;
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+.navbar-nav .nav-item .nav-link {
+    color: white;/*#1e1e2f;*/
+    font-weight: bold;
+    padding: 1em 2em;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    line-height: 1.2;
+}
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #29293d;
+    color: #ff4d4d;
+    border-radius: 5px;
+}
+
+.top-games {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 5em;
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap; /* Karten umbrechen, falls kein Platz */
+    justify-content: space-between; /* Gleichmäßige Verteilung */
+    gap: 30px; /* Abstand zwischen den Karten */
+}
+
+.reviews article {
+    flex: 1 1 calc(33.333% - 20px); /* Drei Karten nebeneinander */
+    max-width: 400px; /* Maximale Breite */
+    background-color: #29293d; /* Dunkler Hintergrund */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+footer {
+    background-color: #151522;
+    color: #e4e4e4;
+    text-align: center;
+    padding: 1em 0;
+    position: absolute;
+    bottom: -13px;
+    width: 100%;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
