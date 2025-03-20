@@ -18,9 +18,46 @@ class GameReview {
     }
 }
 
+const allReviews = [];
+
 document.addEventListener("DOMContentLoaded", function () {
-    const addReviewButton = document.getElementById("addReview");
-    addReviewButton.addEventListener("click", function () {
-        alert("Neues Bewertungsformular öffnen!");
+    const modal = document.getElementById("reviewModal");
+    const openButton = document.getElementById("addReview");
+    const closeButton = document.querySelector(".close");
+    const reviewForm = document.getElementById("reviewForm");
+    const showReviewsButton = document.getElementById("showReviews");
+
+    openButton.addEventListener("click", function () {
+        modal.style.display = "block";
+    });
+
+    closeButton.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+
+    reviewForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const gameTitle = document.getElementById("gameTitle").value;
+        const reviewTitle = "empty";
+        const rating = Number(document.getElementById("rating").value);
+        const reviewText = document.getElementById("reviewText").value;
+        const author = "test";
+
+        allReviews.push(new GameReview(gameTitle, reviewTitle, rating, reviewText, author));
+
+        alert("Bewertung hinzugefügt!");
+        reviewForm.reset();
+        modal.style.display = "none";
+    });
+
+    showReviewsButton.addEventListener("click", function () {
+        allReviews.forEach(review => review.display());
     });
 });
