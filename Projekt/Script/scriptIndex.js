@@ -6,6 +6,7 @@ class GameReview {
         this.rating = rating;
         this.reviewtext = reviewText;
         this.author = author;
+        this.date = new Date().toLocaleDateString();
     }
 
     display() {
@@ -13,5 +14,13 @@ class GameReview {
         console.log(`Review: ${this.reviewTitle}`);
         console.log(`Rating: ${this.rating}`);
         console.log(`Review text: ${this.reviewtext}, Author: ${this.author}`);
+        console.log(`Date: ${this.date}`);
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const addReviewButton = document.getElementById("addReview");
+    addReviewButton.addEventListener("click", function () {
+        alert("Neues Bewertungsformular öffnen!");
+    });
+});

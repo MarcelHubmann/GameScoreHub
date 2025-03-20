@@ -55,9 +55,40 @@ h1, h2, h3 {
     border-radius: 5px;
 }
 
+.reviews-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+}
+
 .top-games {
     text-align: center;
     margin-bottom: 30px;
+}
+
+#addReview {
+    position: absolute;
+    right: 10px;
+    background: linear-gradient(90deg, #ff4d4d, #ff751a);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+#addReview:hover {
+    background: linear-gradient(90deg, #ff751a, #ff4d4d);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 main {
