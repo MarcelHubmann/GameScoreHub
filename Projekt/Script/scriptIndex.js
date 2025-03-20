@@ -52,7 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         allReviews.push(new GameReview(gameTitle, reviewTitle, rating, reviewText, author));
 
-        alert("Bewertung hinzugefügt!");
         reviewForm.reset();
         modal.style.display = "none";
     });
