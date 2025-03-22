@@ -23,12 +23,14 @@ main {
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 10px;
+    min-height: 105px;
+    box-sizing: border-box;
 }
 
 .reviews {
     display: flex;
     padding: 10px 20px;
+    margin-top: 10px;
     align-items: center;
     justify-content: space-between;
 }
@@ -42,15 +44,14 @@ main {
 }
 
 .top-games {
+    margin: 0;
     text-align: center;
-    margin-bottom: 40px;
-    align-items: center;
-    justify-content: center;
+
 }
 
 #addReview {
     position: absolute;
-    top: 5px;
+    top: 10px;
     right: 10px;
     width: 210px;
     background: linear-gradient(90deg, #ff4d4d, #ff751a);
@@ -76,7 +77,7 @@ main {
 #showReviews {
     position: absolute;
     right: 10px;
-    bottom: 5px;
+    bottom: 10px;
     width: 210px;
     background: linear-gradient(90deg, #ff4d4d, #ff751a);
     color: white;
