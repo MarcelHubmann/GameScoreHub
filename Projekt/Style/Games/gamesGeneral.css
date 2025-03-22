@@ -8,18 +8,6 @@ body {
     color: #e4e4e4;
 }
 
-header {
-    display:flex;
-    background: linear-gradient(90deg, #ff4d4d, #ff751a);
-    color: white;
-    padding: 1.5em 0;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    font-size: 1.5rem;
-    position: relative;
-}
-
 h1, h2, h3 {
     color: white;
 }
@@ -53,7 +41,7 @@ main {
 
 .homeButton {
     position: fixed; /* Der Button bleibt an einer festen Position */
-    bottom: 4em; /* Abstand vom unteren Rand */
+    bottom: 3em; /* Abstand vom unteren Rand */
     right: 0.5em; /* Abstand vom rechten Rand */
     background: linear-gradient(90deg, #ff4d4d, #ff751a);
     color: white;
@@ -73,16 +61,4 @@ main {
     background: linear-gradient(90deg, #ff751a, #ff4d4d);
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-}
-
-footer {
-    background-color: #151522;
-    color: #e4e4e4;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    bottom: -13px;
-    width: 100%;
-    font-size: 0.9rem;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
 }

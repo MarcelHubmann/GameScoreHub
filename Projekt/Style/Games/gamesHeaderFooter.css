@@ -1,0 +1,30 @@
+
+header {
+    display:flex;
+    background: linear-gradient(90deg, #ff4d4d, #ff751a);
+    color: white;
+    padding: 1.5em 0;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+    position: relative;
+}
+
+footer {
+    background-color: #151522;
+    color: #e4e4e4;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    display: flex;
+    position: fixed;
+    bottom: 0.1em;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+#footerP {
+    margin: 0;
+    font-size: 1em;
+}
