@@ -45,10 +45,10 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault();
 
         const gameTitle = document.getElementById("gameTitle").value;
-        const reviewTitle = "empty";
+        const reviewTitle = document.getElementById("reviewTitle").value;
         const rating = Number(document.getElementById("rating").value);
         const reviewText = document.getElementById("reviewText").value;
-        const author = "test";
+        const author = document.getElementById("author").value;
 
         allReviews.push(new GameReview(gameTitle, reviewTitle, rating, reviewText, author));
 

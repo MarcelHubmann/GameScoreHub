@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="Style/Index/indexGeneral.css">
     <link rel="stylesheet" href="Style/Index/indexHeaderFooter.css">
     <link rel="stylesheet" href="Style/Index/indexNav.css">
+    <link rel="stylesheet" href="Style/Index/indexNewReview.css">
 </head>
 
 <body>
@@ -42,10 +43,14 @@
                     <form id="reviewForm">
                         <label for="gameTitle">Spiel:</label>
                         <input type="text" id="gameTitle" required>
+                        <label for="reviewTitle">Titel:</label>
+                        <input type="text" id="reviewTitle" required>
                         <label for="rating">Bewertung (1-5 Sterne):</label>
                         <input type="number" id="rating" min="1" max="5" required>
                         <label for="reviewText">Deine Meinung:</label>
                         <textarea id="reviewText" required></textarea>
+                        <label for="author">Dein Name:</label>
+                        <input type="text" id="author" required>
                         <button type="submit">Bewertung speichern</button>
                     </form>
                 </div>
@@ -76,8 +81,7 @@
     </main>
     <footer>
         <p>&copy; 2024 Spielebewertungen</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="Script/scriptIndex.js"></script>
+    </footer>
 </body>
 </html>
