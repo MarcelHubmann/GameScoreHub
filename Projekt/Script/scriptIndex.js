@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const openButton = document.getElementById("addReview");
     const closeButton = document.querySelector(".close");
     const reviewForm = document.getElementById("reviewForm");
-    const showReviewsButton = document.getElementById("showReviews");
 
     openButton.addEventListener("click", function () {
         modal.style.display = "block";
@@ -49,14 +48,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const rating = Number(document.getElementById("rating").value);
         const reviewText = document.getElementById("reviewText").value;
         const author = document.getElementById("author").value;
-
         allReviews.push(new GameReview(gameTitle, reviewTitle, rating, reviewText, author));
 
         reviewForm.reset();
         modal.style.display = "none";
     });
 
-    showReviewsButton.addEventListener("click", function () {
-        allReviews.forEach(review => review.display());
-    });
 });

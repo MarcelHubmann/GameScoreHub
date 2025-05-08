@@ -68,25 +68,6 @@ main {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
-#showReviews {
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    width: 210px;
-    padding: 10px 20px;
-    cursor: pointer;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease-in-out;
-}
-
-#showReviews:hover {
-    background: linear-gradient(90deg, #ff751a, #ff4d4d);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-}
-
 button {
     border-radius: 8px;
     border: none;
