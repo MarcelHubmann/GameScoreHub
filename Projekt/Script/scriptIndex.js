@@ -17,7 +17,6 @@ class GameReview {
         console.log(`Date: ${this.date}`);
     }
 }
-
 const allReviews = [];
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -55,3 +54,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+const server_url = 'http://localhost:3000';
+fetch(`${server_url}/games`)
+    .then(response => response.json())
+    .then(data => {
+        console.log('Loaded data =>', data)
+    })
+    .catch(error => console.error('Error fetching data: ', error));
