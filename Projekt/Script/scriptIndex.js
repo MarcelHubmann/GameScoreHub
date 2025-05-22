@@ -57,8 +57,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const server_url = 'http://localhost:3000';
 fetch(`${server_url}/games`)
-    .then(response => response.json())
-    .then(data => {
-        console.log('Loaded data =>', data)
-    })
-    .catch(error => console.error('Error fetching data: ', error));
+  .then(response => response.json())
+  .then(reviews => {
+    const container = document.getElementById('reviewsContainer');
+    container.innerHTML = ''; // Vorherige Inhalte löschen
+
+    reviews.forEach((r) => {
+      const article = document.createElement('article');
+      article.innerHTML = `
+        <h3>${r.gameTitle}</h3>
+        <h4>${r.reviewTitle}</h4>
+        <p>Bewertung: ${'★'.repeat(r.rating)}${'☆'.repeat(5 - r.rating)}</p>
+        <p>"${r.reviewtext}" - ${r.author}</p>
+      `;
+      container.appendChild(article);
+    });
+  })
+  .catch(error => console.error('Fehler beim Laden der Bewertungen: ', error));

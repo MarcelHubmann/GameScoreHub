@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>GameScoreHub - Spieldetails</title>
+    <link rel="stylesheet" href="Style/Index/indexGeneral.css">
+    <link rel="stylesheet" href="Style/Index/indexHeaderFooter.css">
+    <link rel="stylesheet" href="Style/Index/indexNav.css">
+    <link rel="stylesheet" href="Style/Index/indexNewReview.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="Logos/GSH_Logo.PNG" alt="GameScoreHub Logo" class="me-3" style="height: 3.75em; border-radius: 50%;">
+        <h1 id="game-title" class="mb-0">GameScoreHub</h1>
+    </header>
+
+    <nav class="navbar">
+        <div class="burger-menu" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="Games/gta5.html">GTA 5</a></li>
+            <li><a href="Games/cod.html">Call of Duty</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="reviews-header">
+            <h2 class="top-games">Top 3 Spielerbewertungen</h2>
+            <button type="button" id="addReview">Neue Bewertung</button>
+            <div id="reviewModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Neue Bewertung hinzufügen</h2>
+                    <form id="reviewForm">
+                        <label for="gameTitle">Spiel:</label>
+                        <input type="text" id="gameTitle" required>
+                        <label for="reviewTitle">Titel:</label>
+                        <input type="text" id="reviewTitle" required>
+                        <label for="rating">Bewertung (1-5 Sterne):</label>
+                        <input type="number" id="rating" min="1" max="5" required>
+                        <label for="reviewText">Deine Meinung:</label>
+                        <textarea id="reviewText" required></textarea>
+                        <label for="author">Dein Name:</label>
+                        <input type="text" id="author" required>
+                        <button type="submit">Bewertung speichern</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+<section class="reviews" id="reviewsContainer">
+<!-- Dynamische Inhalte kommen hier hin -->
+</section>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Spielebewertungen</p>
+    <script src="Script/scriptIndex.js"></script>
+    </footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.getElementById('reviewsContainer');
+  const server_url = 'http://localhost:3000';
+
+  fetch(`${server_url}/games`)
+    .then(res => res.json())
+    .then(reviews => {
+      if (!Array.isArray(reviews)) {
+        container.innerHTML = "<p style='color:red;'>Fehler: Ungültiges Datenformat.</p>";
+        return;
+      }
+
+      container.innerHTML = '';
+      reviews.forEach((r) => {
+        const article = document.createElement('article');
+        article.innerHTML = `
+          <h3>${r.gameTitle}</h3>
+          <h4>${r.reviewTitle}</h4>
+          <p>Bewertung: ${'★'.repeat(r.rating)}${'☆'.repeat(5 - r.rating)}</p>
+          <p>"${r.reviewtext}" - ${r.author}</p>
+        `;
+        container.appendChild(article);
+      });
+    })
+    .catch(err => {
+      container.innerHTML = "<p style='color:red;'>Fehler beim Laden der Daten.</p>";
+      console.error(err);
+    });
+});
+</script>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Spielebewertungen</p>
+    <script src="Script/scriptIndex.js"></script>
+    </footer>
+</body>
+</html>

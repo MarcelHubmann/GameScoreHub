@@ -1,203 +1,203 @@
 {
   "games": [
     {
-      "name": "Grand Theft Auto V",
-      "released": "2013-09-17",
+      "gameTitle": "Grand Theft Auto V",
+      "dateAdded": "2013-09-17",
       "rating": 4.47
     },
     {
-      "name": "The Witcher 3: Wild Hunt",
-      "released": "2015-05-18",
+      "gameTitle": "The Witcher 3: Wild Hunt",
+      "dateAdded": "2015-05-18",
       "rating": 4.65
     },
     {
-      "name": "Portal 2",
-      "released": "2011-04-18",
+      "gameTitle": "Portal 2",
+      "dateAdded": "2011-04-18",
       "rating": 4.59
     },
     {
-      "name": "Counter-Strike: Global Offensive",
-      "released": "2012-08-21",
+      "gameTitle": "Counter-Strike: Global Offensive",
+      "dateAdded": "2012-08-21",
       "rating": 3.57
     },
     {
-      "name": "Tomb Raider (2013)",
-      "released": "2013-03-05",
+      "gameTitle": "Tomb Raider (2013)",
+      "dateAdded": "2013-03-05",
       "rating": 4.06
     },
     {
-      "name": "Portal",
-      "released": "2007-10-09",
+      "gameTitle": "Portal",
+      "dateAdded": "2007-10-09",
       "rating": 4.49
     },
     {
-      "name": "Left 4 Dead 2",
-      "released": "2009-11-17",
+      "gameTitle": "Left 4 Dead 2",
+      "dateAdded": "2009-11-17",
       "rating": 4.09
     },
     {
-      "name": "The Elder Scrolls V: Skyrim",
-      "released": "2011-11-11",
+      "gameTitle": "The Elder Scrolls V: Skyrim",
+      "dateAdded": "2011-11-11",
       "rating": 4.42
     },
     {
-      "name": "Red Dead Redemption 2",
-      "released": "2018-10-26",
+      "gameTitle": "Red Dead Redemption 2",
+      "dateAdded": "2018-10-26",
       "rating": 4.59
     },
     {
-      "name": "BioShock Infinite",
-      "released": "2013-03-26",
+      "gameTitle": "BioShock Infinite",
+      "dateAdded": "2013-03-26",
       "rating": 4.38
     },
     {
-      "name": "Half-Life 2",
-      "released": "2004-11-16",
+      "gameTitle": "Half-Life 2",
+      "dateAdded": "2004-11-16",
       "rating": 4.48
     },
     {
-      "name": "Borderlands 2",
-      "released": "2012-09-18",
+      "gameTitle": "Borderlands 2",
+      "dateAdded": "2012-09-18",
       "rating": 4.01
     },
     {
-      "name": "Life is Strange",
-      "released": "2015-01-29",
+      "gameTitle": "Life is Strange",
+      "dateAdded": "2015-01-29",
       "rating": 4.12
     },
     {
-      "name": "BioShock",
-      "released": "2007-08-21",
+      "gameTitle": "BioShock",
+      "dateAdded": "2007-08-21",
       "rating": 4.36
     },
     {
-      "name": "Destiny 2",
-      "released": "2017-09-06",
+      "gameTitle": "Destiny 2",
+      "dateAdded": "2017-09-06",
       "rating": 3.52
     },
     {
-      "name": "God of War (2018)",
-      "released": "2018-04-20",
+      "gameTitle": "God of War (2018)",
+      "dateAdded": "2018-04-20",
       "rating": 4.55
     },
     {
-      "name": "Fallout 4",
-      "released": "2015-11-09",
+      "gameTitle": "Fallout 4",
+      "dateAdded": "2015-11-09",
       "rating": 3.81
     },
     {
-      "name": "PAYDAY 2",
-      "released": "2013-08-13",
+      "gameTitle": "PAYDAY 2",
+      "dateAdded": "2013-08-13",
       "rating": 3.52
     },
     {
-      "name": "Limbo",
-      "released": "2010-07-21",
+      "gameTitle": "Limbo",
+      "dateAdded": "2010-07-21",
       "rating": 4.14
     },
     {
-      "name": "Team Fortress 2",
-      "released": "2007-10-10",
+      "gameTitle": "Team Fortress 2",
+      "dateAdded": "2007-10-10",
       "rating": 3.68
     },
     {
-      "name": "DOOM (2016)",
-      "released": "2016-05-12",
+      "gameTitle": "DOOM (2016)",
+      "dateAdded": "2016-05-12",
       "rating": 4.38
     },
     {
-      "name": "Cyberpunk 2077",
-      "released": "2020-12-10",
+      "gameTitle": "Cyberpunk 2077",
+      "dateAdded": "2020-12-10",
       "rating": 4.21
     },
     {
-      "name": "Terraria",
-      "released": "2011-05-16",
+      "gameTitle": "Terraria",
+      "dateAdded": "2011-05-16",
       "rating": 4.07
     },
     {
-      "name": "Warframe",
-      "released": "2013-03-25",
+      "gameTitle": "Warframe",
+      "dateAdded": "2013-03-25",
       "rating": 3.42
     },
     {
-      "name": "Dota 2",
-      "released": "2013-07-09",
+      "gameTitle": "Dota 2",
+      "dateAdded": "2013-07-09",
       "rating": 3.07
     },
     {
-      "name": "Grand Theft Auto IV",
-      "released": "2008-04-29",
+      "gameTitle": "Grand Theft Auto IV",
+      "dateAdded": "2008-04-29",
       "rating": 4.26
     },
     {
-      "name": "Rocket League",
-      "released": "2015-07-07",
+      "gameTitle": "Rocket League",
+      "dateAdded": "2015-07-07",
       "rating": 3.93
     },
     {
-      "name": "Horizon Zero Dawn",
-      "released": "2017-02-28",
+      "gameTitle": "Horizon Zero Dawn",
+      "dateAdded": "2017-02-28",
       "rating": 4.28
     },
     {
-      "name": "Metro 2033",
-      "released": "2010-03-16",
+      "gameTitle": "Metro 2033",
+      "dateAdded": "2010-03-16",
       "rating": 3.94
     },
     {
-      "name": "Rise of the Tomb Raider",
-      "released": "2015-11-10",
+      "gameTitle": "Rise of the Tomb Raider",
+      "dateAdded": "2015-11-10",
       "rating": 4.04
     },
     {
-      "name": "Batman: Arkham Knight",
-      "released": "2015-06-23",
+      "gameTitle": "Batman: Arkham Knight",
+      "dateAdded": "2015-06-23",
       "rating": 4.24
     },
     {
-      "name": "Metal Gear Solid V: The Phantom Pain",
-      "released": "2015-09-01",
+      "gameTitle": "Metal Gear Solid V: The Phantom Pain",
+      "dateAdded": "2015-09-01",
       "rating": 4.16
     },
     {
-      "name": "Apex Legends",
-      "released": "2019-02-04",
+      "gameTitle": "Apex Legends",
+      "dateAdded": "2019-02-04",
       "rating": 3.64
     },
     {
-      "name": "The Witcher 2: Assassins of Kings Enhanced Edition",
-      "released": "2012-04-16",
+      "gameTitle": "The Witcher 2: Assassins of Kings Enhanced Edition",
+      "dateAdded": "2012-04-16",
       "rating": 4.16
     },
     {
-      "name": "The Witcher: Enhanced Edition Director's Cut",
-      "released": "2008-09-16",
+      "gameTitle": "The Witcher: Enhanced Edition Director's Cut",
+      "dateAdded": "2008-09-16",
       "rating": 4.06
     },
     {
-      "name": "Grand Theft Auto: San Andreas",
-      "released": "2004-10-26",
+      "gameTitle": "Grand Theft Auto: San Andreas",
+      "dateAdded": "2004-10-26",
       "rating": 4.5
     },
     {
-      "name": "Half-Life 2: Lost Coast",
-      "released": "2005-10-27",
+      "gameTitle": "Half-Life 2: Lost Coast",
+      "dateAdded": "2005-10-27",
       "rating": 3.45
     },
     {
-      "name": "Middle-earth: Shadow of Mordor",
-      "released": "2014-09-30",
+      "gameTitle": "Middle-earth: Shadow of Mordor",
+      "dateAdded": "2014-09-30",
       "rating": 3.9
     },
     {
-      "name": "The Walking Dead: Season 1",
-      "released": "2012-04-23",
+      "gameTitle": "The Walking Dead: Season 1",
+      "dateAdded": "2012-04-23",
       "rating": 4.36
     },
     {
-      "name": "Hollow Knight",
-      "released": "2017-02-23",
+      "gameTitle": "Hollow Knight",
+      "dateAdded": "2017-02-23",
       "rating": 4.4
     }
   ]

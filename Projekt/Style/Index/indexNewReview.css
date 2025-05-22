@@ -49,3 +49,9 @@ textarea {
 form button {
     padding: 8px;
 }
+
+.reviews-header { text-align: center; margin: 2rem 0; }
+.reviews-header h2 { color: #f0f0f0; font-weight: 600; }
+.reviews { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; padding: 2rem; }
+.reviews article { background-color: #2a2a2a; padding: 1rem; border-radius: 12px; box-shadow: 0 0 10px #00000050; }
+.reviews h3, .reviews h4 { margin: 0.5rem 0; }
