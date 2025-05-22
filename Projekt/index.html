@@ -1,232 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <title>GameScoreHub</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-<!--
-
-TemplateMo 579 Cyborg Gaming
-
-https://templatemo.com/tm-579-cyborg-gaming
-
--->
-  </head>
+<html lang="de">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>GameScoreHub - Spieldetails</title>
+    <link rel="stylesheet" href="Style/Index/indexGeneral.css">
+    <link rel="stylesheet" href="Style/Index/indexHeaderFooter.css">
+    <link rel="stylesheet" href="Style/Index/indexNav.css">
+    <link rel="stylesheet" href="Style/Index/indexNewReview.css">
+</head>
 
 <body>
 
-  <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
-  <!-- ***** Preloader End ***** -->
+    <header>
+        <img src="Logos/GSH_Logo.PNG" alt="GameScoreHub Logo" class="me-3" style="height: 3.75em; border-radius: 50%;">
+        <h1 id="game-title" class="mb-0">GameScoreHub</h1>
+    </header>
 
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        <img src="Logos/GSH_Logo.PNG" alt="">
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Search End ***** -->
-                    <div class="search-input">
-                      <form id="search" action="#">
-                        <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
-                        <i class="fa fa-search"></i>
-                      </form>
-                    </div>
-                    <!-- ***** Search End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="browse.html">Browse</a></li>
-                        <li><a href="details.html">Details</a></li>
-                        <li><a href="streams.html">Streams</a></li>
-                        <li><a href="profile.html">Profile <img src="assets/images/profile-header.jpg" alt=""></a></li>
-                    </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
+    <nav class="navbar">
+        <div class="burger-menu" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="Games/gta5.html">GTA 5</a></li>
+            <li><a href="Games/cod.html">Call of Duty</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="reviews-header">
+            <h2 class="top-games">Top 3 Spielerbewertungen</h2>
+            <button type="button" id="addReview">Neue Bewertung</button>
+            <div id="reviewModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Neue Bewertung hinzufügen</h2>
+                    <form id="reviewForm">
+                        <label for="gameTitle">Spiel:</label>
+                        <input type="text" id="gameTitle" required>
+                        <label for="reviewTitle">Titel:</label>
+                        <input type="text" id="reviewTitle" required>
+                        <label for="rating">Bewertung (1-5 Sterne):</label>
+                        <input type="number" id="rating" min="1" max="5" required>
+                        <label for="reviewText">Deine Meinung:</label>
+                        <textarea id="reviewText" required></textarea>
+                        <label for="author">Dein Name:</label>
+                        <input type="text" id="author" required>
+                        <button type="submit">Bewertung speichern</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
+        
+<section class="reviews" id="reviewsContainer">
+<!-- Dynamische Inhalte kommen hier hin -->
+</section>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="page-content">
+    </main>
+    <footer>
+        <p>&copy; 2024 Spielebewertungen</p>
+    <script src="Script/scriptIndex.js"></script>
+    </footer>
 
-          <!-- ***** Banner Start ***** -->
-          <div class="main-banner">
-            <div class="row">
-              <div class="col-lg-7">
-                <div class="header-text">
-                  <h6>Welcome To GameScoreHub</h6>
-                  <h4><em>Browse</em> Our Popular Games Here</h4>
-                  <div class="main-button">
-                    <a href="browse.html">Browse Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ***** Banner End ***** -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.getElementById('reviewsContainer');
+  const server_url = 'http://localhost:3000';
 
-          <!-- ***** Most Popular Start ***** -->
-          <div class="most-popular">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="heading-section">
-                  <h4><em>Most Popular</em> Right Now</h4>
-                </div>
-                  <section class="reviews" id="reviewsContainer">
-                    <!-- Dynamische Inhalte kommen hier hin -->
-                  </section>
-                  <div class="col-lg-12">
-                    <div class="main-button">
-                      <a href="browse.html">Discover Popular</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ***** Most Popular End ***** -->
+  fetch(`${server_url}/games`)
+    .then(res => res.json())
+    .then(reviews => {
+      if (!Array.isArray(reviews)) {
+        container.innerHTML = "<p style='color:red;'>Fehler: Ungültiges Datenformat.</p>";
+        return;
+      }
 
-          <!-- ***** Gaming Library Start ***** -->
-          <div class="gaming-library">
-            <div class="col-lg-12">
-              <div class="heading-section">
-                <h4><em>Your Gaming</em> Library</h4>
-              </div>
-              <div class="item">
-                <ul>
-                  <li><img src="assets/images/game-01.jpg" alt="" class="templatemo-item"></li>
-                  <li><h4>Dota 2</h4><span>Sandbox</span></li>
-                  <li><h4>Date Added</h4><span>24/08/2036</span></li>
-                  <li><h4>Hours Played</h4><span>634 H 22 Mins</span></li>
-                  <li><h4>Currently</h4><span>Downloaded</span></li>
-                  <li><div class="main-border-button border-no-active"><a href="#">Bewertet</a></div></li>
-                </ul>
-              </div>
-              <div class="item">
-                <ul>
-                  <li><img src="assets/images/game-02.jpg" alt="" class="templatemo-item"></li>
-                  <li><h4>Fortnite</h4><span>Sandbox</span></li>
-                  <li><h4>Date Added</h4><span>22/06/2036</span></li>
-                  <li><h4>Hours Played</h4><span>740 H 52 Mins</span></li>
-                  <li><h4>Currently</h4><span>Downloaded</span></li>
-                  <li><div class="main-border-button"><a href="#">Download</a></div></li>
-                </ul>
-              </div>
-              <div class="item last-item">
-                <ul>
-                  <li><img src="assets/images/game-03.jpg" alt="" class="templatemo-item"></li>
-                  <li><h4>CS-GO</h4><span>Sandbox</span></li>
-                  <li><h4>Date Added</h4><span>21/04/2036</span></li>
-                  <li><h4>Hours Played</h4><span>892 H 14 Mins</span></li>
-                  <li><h4>Currently</h4><span>Downloaded</span></li>
-                  <li><div class="main-border-button border-no-active"><a href="#">Downloaded</a></div></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="main-button">
-                <a href="profile.html">View Your Library</a>
-              </div>
-            </div>
-          </div>
-          <!-- ***** Gaming Library End ***** -->
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved. 
-          
-          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a>  Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a></p>
-        </div>
-      </div>
-    </div>
-  </footer>
+      container.innerHTML = '';
+      reviews.forEach((r) => {
+        const article = document.createElement('article');
+        article.innerHTML = `
+          <h3>${r.gameTitle}</h3>
+          <h4>${r.reviewTitle}</h4>
+          <p>Bewertung: ${'★'.repeat(r.rating)}${'☆'.repeat(5 - r.rating)}</p>
+          <p>"${r.reviewtext}" - ${r.author}</p>
+        `;
+        container.appendChild(article);
+      });
+    })
+    .catch(err => {
+      container.innerHTML = "<p style='color:red;'>Fehler beim Laden der Daten.</p>";
+      console.error(err);
+    });
+});
+</script>
 
-
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/tabs.js"></script>
-  <script src="assets/js/popup.js"></script>
-  <script src="assets/js/custom.js"></script>
-
-  <div style="text-align: center; margin: 30px;">
-  <button id="addReview" style="padding: 10px 20px; font-size: 16px;">➕ Neue Bewertung schreiben</button>
-</div>
-
-<!-- Modal -->
-<div id="reviewModal" style="display:none; position:fixed; z-index:1; left:0; top:0; width:100%; height:100%; overflow:auto; background-color:rgba(0,0,0,0.5);">
-  <div style="background-color:#1f1f1f; margin:10% auto; padding:20px; border:1px solid #888; width:80%; max-width:500px; color:white;">
-    <span class="close" style="color:#aaa; float:right; font-size:28px; font-weight:bold; cursor:pointer;">&times;</span>
-    <h2>📝 Spiel bewerten</h2>
-    <form id="reviewForm">
-      <label for="gameTitle">Spielname:</label><br>
-      <input type="text" id="gameTitle" required><br><br>
-
-      <label for="reviewTitle">Titel der Bewertung:</label><br>
-      <input type="text" id="reviewTitle" required><br><br>
-
-      <label for="rating">Bewertung (1–10):</label><br>
-      <input type="number" id="rating" min="1" max="10" required><br><br>
-
-      <label for="reviewText">Dein Text:</label><br>
-      <textarea id="reviewText" required></textarea><br><br>
-
-      <label for="author">Dein Name:</label><br>
-      <input type="text" id="author" required><br><br>
-
-      <button type="submit">Absenden</button>
-    </form>
-  </div>
-</div>
-<script src="scriptIndex.js"></script>
-  </body>
-
+    </main>
+    <footer>
+        <p>&copy; 2024 Spielebewertungen</p>
+    <script src="Script/scriptIndex.js"></script>
+    </footer>
+</body>
 </html>
