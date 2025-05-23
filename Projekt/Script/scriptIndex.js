@@ -63,9 +63,10 @@ fetch(`${server_url}/games`)
     container.innerHTML = ''; // Vorherige Inhalte löschen
 
     reviews.forEach((r) => {
+        console.log(r);
       const article = document.createElement('article');
       article.innerHTML = `
-        <h3>${r.gameTitle}</h3>
+        <h3>${r.name}</h3>
         <h4>${r.reviewTitle}</h4>
         <p>Bewertung: ${'★'.repeat(r.rating)}${'☆'.repeat(5 - r.rating)}</p>
         <p>"${r.reviewtext}" - ${r.author}</p>

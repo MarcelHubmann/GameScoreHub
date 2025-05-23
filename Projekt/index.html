@@ -63,43 +63,5 @@
         <p>&copy; 2024 Spielebewertungen</p>
     <script src="Script/scriptIndex.js"></script>
     </footer>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const container = document.getElementById('reviewsContainer');
-  const server_url = 'http://localhost:3000';
-
-  fetch(`${server_url}/games`)
-    .then(res => res.json())
-    .then(reviews => {
-      if (!Array.isArray(reviews)) {
-        container.innerHTML = "<p style='color:red;'>Fehler: Ungültiges Datenformat.</p>";
-        return;
-      }
-
-      container.innerHTML = '';
-      reviews.forEach((r) => {
-        const article = document.createElement('article');
-        article.innerHTML = `
-          <h3>${r.gameTitle}</h3>
-          <h4>${r.reviewTitle}</h4>
-          <p>Bewertung: ${'★'.repeat(r.rating)}${'☆'.repeat(5 - r.rating)}</p>
-          <p>"${r.reviewtext}" - ${r.author}</p>
-        `;
-        container.appendChild(article);
-      });
-    })
-    .catch(err => {
-      container.innerHTML = "<p style='color:red;'>Fehler beim Laden der Daten.</p>";
-      console.error(err);
-    });
-});
-</script>
-
-    </main>
-    <footer>
-        <p>&copy; 2024 Spielebewertungen</p>
-    <script src="Script/scriptIndex.js"></script>
-    </footer>
 </body>
 </html>
