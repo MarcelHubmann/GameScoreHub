@@ -2,7 +2,7 @@ const fs = require("fs");
 const fetch = require("node-fetch");
 
 const apiKey = '1bf5ac0cffd4435dba635b79e8e3bca1';
-const targetAmountOfGames = 100;
+const targetAmountOfGames = 9;
 const API_URL = `https://api.rawg.io/api/games?key=${apiKey}&page_size=${targetAmountOfGames}`;
 
 async function fetchAndSaveGames() {
